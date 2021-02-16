@@ -20,9 +20,13 @@ const App=()=> {
 
             }}></div>)
 		} else {
-		    return <button onClick={buttonClickHandler} >Start</button>
+		    return <div> <button className="start" onClick={buttonClickHandler} >Click For One Ball</button>
+        <button onClick={renderBallOrButton} className="reset">
+        Reset
+      </button></div>
 		}
     }
+    
 
     // bind ArrowRight keydown event
     useEffect( ()=>{
